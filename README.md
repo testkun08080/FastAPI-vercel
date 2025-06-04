@@ -19,6 +19,7 @@ FastAPIをvercel上までホスティングするまでの流れと、サンプ�
 
 3. **仮想環境の構築**
     ```bash
+    cd FastAPI-vercel
     python3.12 -m venv .venv
     source .venv/bin/activate
     pip install -r requirements.txt
