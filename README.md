@@ -12,14 +12,19 @@ FastAPIをvercel上までホスティングするまでの流れと、サンプ�
 
 ## ローカル上でセットアップから起動
 
-1. **仮想環境の構築**
+1. **ローカルへクローンする**
+    ```bash
+    git clone https://github.com/testkun08080/FastAPI-vercel.git
+   ```
+
+3. **仮想環境の構築**
     ```bash
     python3.12 -m venv .venv
     source .venv/bin/activate
     pip install -r requirements.txt
    ```
    
-2. **起動**
+4. **起動**
     ```bash
     uvicorn api.app.main:app --reload 
    ```
@@ -45,12 +50,12 @@ FastAPIをvercel上までホスティングするまでの流れと、サンプ�
     vercel dev
    ```
 
-1. **vercelへデプロイしてプレビューとして確認ト**
+2. **vercelへデプロイ（プレビューとして）**
     ```bash
     vercel
    ```
 
-1. **実際にプロダクトとして、vercelへデプロイ**
+3. **、vercelへデプロイ（プロダクトとして）**
     ```bash
     vercel --prod
    ```
