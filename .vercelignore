@@ -11,5 +11,3 @@ pytest.ini
 .pytest_cache
 .gitignore
 *.md
-requirements.txt
-requirements_test.txt
