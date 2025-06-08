@@ -14,10 +14,6 @@ https://fast-api-vercel-murex.vercel.app/
 - uv (インストールは[こちら](https://docs.astral.sh/uv/getting-started/installation/))
 - Vercel CLI (インストールは[こちら](https://vercel.com/docs/cli#installing-vercel-cli/))
 
-
-
-
-
 ## ローカル上でセットアップから起動
 
 1. **ローカルへクローンする**
@@ -28,18 +24,13 @@ https://fast-api-vercel-murex.vercel.app/
 3. **仮想環境の構築**
     ```bash
     cd FastAPI-vercel
-    python3.12 -m venv .venv
-    source .venv/bin/activate
-    pip install -r requirements.txt
+    uv venv -p 3.12
+    uv pip install -r requirements.txt
    ```
    
 4. **起動**
     ```bash
-    uvicorn api.app.main:app --reload 
-   ```
-   or
-    ```bash
-    python -m api.app.main
+    uv run -m api.app.main
    ```
 
 ## Pytestを使ったテスト
@@ -49,7 +40,7 @@ https://fast-api-vercel-murex.vercel.app/
    ```
 1. **Pytest実行**
     ```bash
-    pytest --html=report.html --self-contained-html --log-level=INFO
+    uv run pytest --html=report.html --self-contained-html --log-level=INFO
    ```
 
 ## Vercel CLI を使ってテストからデプロイ/ホスティングまで
