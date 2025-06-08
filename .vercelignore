@@ -8,8 +8,8 @@ __pycache__/
 *.md
 api/tests
 pytest.ini
+.pytest_cache
 .gitignore
-pytest.ini
 *.md
 requirements.txt
 requirements_test.txt
