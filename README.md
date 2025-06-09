@@ -43,7 +43,7 @@ https://fast-api-vercel-murex.vercel.app/
     uv run pytest --html=report.html --self-contained-html --log-level=INFO
    ```
 
-## Vercel CLI を使ってテストからデプロイ/ホスティングまで
+## Vercel CLI を使ってテストからデプロイ
 
 1. **ローカルでテスト**
     ```bash
